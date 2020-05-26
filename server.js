@@ -26,7 +26,7 @@ function start(route, handle) {
     //response.end();
   }
 
-  http.createServer(onRequest).listen(process.env.PORT || 80, null);
+  http.createServer(onRequest).listen(process.env.PORT || 8080, null);
 }
 function api(route, handle) {
   function onRequest(request, response) {
@@ -77,7 +77,7 @@ function env(route, handle) {
     // response.end();
   }
 
-  http.createServer(onRequest).listen(process.env.PORT || 80, null);
+  http.createServer(onRequest).listen(process.env.PORT || 8080, null);
 }
 
 exports.start = start;
