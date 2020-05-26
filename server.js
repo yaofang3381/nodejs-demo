@@ -77,7 +77,7 @@ function env(route, handle) {
     // response.end();
   }
 
-  http.createServer(onRequest).listen(process.env.PORT || 5000, null);
+  http.createServer(onRequest).listen(process.env.PORT || 80, null);
 }
 
 exports.start = start;
